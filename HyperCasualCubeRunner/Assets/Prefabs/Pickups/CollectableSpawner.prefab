@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3287629694487162135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3287629694487162122}
+  - component: {fileID: 3287629694487162123}
+  - component: {fileID: 3287629694487162120}
+  - component: {fileID: -6775934337322989864}
+  m_Layer: 0
+  m_Name: CollectableSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3287629694487162122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3287629694487162135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3287629694487162123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3287629694487162135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6fab672dedcdb4aaf54681982f9e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerRange: {x: 3, y: 5}
+  isSpawnerActive: 1
+  currentTimer: 0
+  nextSpawnTime: 0
+  spawnYHeight: 0.7
+  spawnAheadDistance: 100
+--- !u!114 &3287629694487162120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3287629694487162135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1146554516cd5524f9e6947b30a12b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pfCollectable: {fileID: 4337789981480184159, guid: ca2dbea5fcfedc545828eb53e4cfcb87, type: 3}
+  poolSize: 5
+--- !u!114 &-6775934337322989864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3287629694487162135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0148e0a6cae3d46b753d3a9499d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkRadius: 0.7
+  checkLayers:
+    serializedVersion: 2
+    m_Bits: 3072
+  tagsToCheck:
+  - Obstacle
+  - Collectable

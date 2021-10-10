@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3835444962199545521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3835444962199545527}
+  - component: {fileID: 3835444962199545526}
+  m_Layer: 0
+  m_Name: AudioManagerInGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3835444962199545527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3835444962199545521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3835444962199545526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3835444962199545521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35f2c093ded17f74388f6d6650d7a17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singleSounds:
+  - sName: BtnRetry
+    sClip: {fileID: 8300000, guid: 19f89c6e740e7447f9e12a8310d3e973, type: 3}
+    sVolume: 0.5
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: BtnHome
+    sClip: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
+    sVolume: 0.5
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: ChangeLane
+    sClip: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
+    sVolume: 0.5
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: HitObstacleLight
+    sClip: {fileID: 8300000, guid: b99da9a57308d4ba1bee1cf1d9038376, type: 3}
+    sVolume: 1
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: HitObstacleHeavy
+    sClip: {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
+    sVolume: 1
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: PlayerDeath
+    sClip: {fileID: 0}
+    sVolume: 1
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: HitConverter
+    sClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+    sVolume: 0.2
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: HyperOn
+    sClip: {fileID: 8300000, guid: 7bd6b897eb5ca4b7d88a205c4a51640c, type: 3}
+    sVolume: 0.2
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: HyperOff
+    sClip: {fileID: 8300000, guid: c5e2a73ad4706440f93bf05df0b465fe, type: 3}
+    sVolume: 0.5
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: PowerUpAdded
+    sClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+    sVolume: 0.2
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: ExtraPoints
+    sClip: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
+    sVolume: 0.2
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  - sName: ExtraLife
+    sClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+    sVolume: 0.2
+    sLoop: 0
+    playOnUnmute: 0
+    soundType: 1
+    shouldPlay: 0
+    source: {fileID: 0}
+  soundBanks:
+  - bankName: InGameMusic
+    differentSounds:
+    - sName: Music1
+      sClip: {fileID: 8300000, guid: 55e75ce7ce7ea03408f12abde1f031c0, type: 3}
+      sVolume: 0.1
+      sLoop: 1
+      playOnUnmute: 1
+      soundType: 0
+      shouldPlay: 0
+      source: {fileID: 0}
+    - sName: Music2
+      sClip: {fileID: 8300000, guid: 1404e4d610d05bc44bbe8a6ae48c9513, type: 3}
+      sVolume: 0.1
+      sLoop: 1
+      playOnUnmute: 1
+      soundType: 0
+      shouldPlay: 0
+      source: {fileID: 0}
+    - sName: Music3
+      sClip: {fileID: 8300000, guid: 7f67203dd6fafb24eb3d4b5ba4510e97, type: 3}
+      sVolume: 0.1
+      sLoop: 1
+      playOnUnmute: 1
+      soundType: 0
+      shouldPlay: 0
+      source: {fileID: 0}
+    - sName: Music4
+      sClip: {fileID: 8300000, guid: bb3081383c1ff524dbd913ca79faf410, type: 3}
+      sVolume: 0.1
+      sLoop: 1
+      playOnUnmute: 1
+      soundType: 0
+      shouldPlay: 0
+      source: {fileID: 0}
+    - sName: Music5
+      sClip: {fileID: 8300000, guid: acc45daec6914504988406327766a289, type: 3}
+      sVolume: 0.1
+      sLoop: 1
+      playOnUnmute: 1
+      soundType: 0
+      shouldPlay: 0
+      source: {fileID: 0}
+    shouldPlayInSequence: 0

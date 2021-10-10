@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6448818796107592991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6448818796107592989}
+  - component: {fileID: 6448818796107592988}
+  - component: {fileID: 6448818796107592979}
+  - component: {fileID: 6448818796107592976}
+  - component: {fileID: 6448818796107592977}
+  - component: {fileID: 509863540639934594}
+  m_Layer: 0
+  m_Name: InGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6448818796107592989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448818796107592991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6448818796107592988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448818796107592991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e0de93ab1e531499b6546fe159c4f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slowmoFactor: 0.05
+  slowmoDuration: 2
+--- !u!114 &6448818796107592979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448818796107592991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1d9d0e55a403d4eba4afffc9f57ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allLanes:
+  - -1.5
+  - 0
+  - 1.5
+  obstacleCombinations:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 1, z: 0}
+  - {x: 0, y: 1, z: 1}
+  - {x: 1, y: 0, z: 0}
+  - {x: 1, y: 0, z: 1}
+  - {x: 1, y: 1, z: 0}
+--- !u!114 &6448818796107592976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448818796107592991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b50e3a78562564f9c81e5173fcea01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allPowers:
+  - powerName: HyperSpeed
+    powerMesh: {fileID: 4300000, guid: bc0cdff0b0fdafc46bbdbda4b3717d71, type: 3}
+    powerMeshMaterial: {fileID: 2100000, guid: d4811b906015bd5488319688cd9330b0, type: 2}
+    powerSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    powerValue: 5
+    powerType: 0
+    needsTimer: 1
+  - powerName: ExtraPoints
+    powerMesh: {fileID: 4300000, guid: 486351f15650ce5408452352641fc317, type: 3}
+    powerMeshMaterial: {fileID: 2100000, guid: 577bf2298c0e1f4469aed7fc997b6760, type: 2}
+    powerSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    powerValue: 50
+    powerType: 1
+    needsTimer: 0
+  - powerName: ExtraLife
+    powerMesh: {fileID: 4300000, guid: f5e70b692f804d346a44df961b6ad5a8, type: 3}
+    powerMeshMaterial: {fileID: 2100000, guid: 70d4a1cd1dfc0bd4f9e9c8987e62b5c5, type: 2}
+    powerSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    powerValue: 1
+    powerType: 2
+    needsTimer: 0
+--- !u!114 &6448818796107592977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448818796107592991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60bd85f6d816e7d418f5076fbffd656a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePerObstacleSmash: 100
+  scorePerItemCollected: 50
+  scorePerUnusedPowerup: 100
+  score: 0
+  txtDistance: {fileID: 0}
+  scoreCounter: {fileID: 0}
+--- !u!114 &509863540639934594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448818796107592991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedc741e4669c814995830fd02f8f060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorGameOverPanel: {fileID: 0}
+  delayBeforeScoreAnimation: 0.5
+  txtScore: {fileID: 0}
+  txtDist: {fileID: 0}
+  txtUnusedPowersNum: {fileID: 0}
+  txtUnusedPowersScore: {fileID: 0}
+  txtFinalScore: {fileID: 0}
